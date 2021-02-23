@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press a key to Start</h1>
+  <div class="container">
+
+    <div class="column left">
+      <h4>INSTRUCTION</h4>
+      <p class="instruction">When game starts, Simon will flash the first signal. Click to choose the flashed signal.<br>
+
+        On next level, Simom will give another signal. Click to repeat the previous signal(s) plus the new one.<br>
+
+        Continue playing as long as you can repeat the sequence.<br>
+      </p>
+    </div>
+
+    <div class="column middle">
+      <div class="row">
+        <div type="button" id="green" class="btn green"></div>
+        <div type="button" id="red" class="btn red"></div>
+      </div>
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"> </div>
+        <div type="button" id="blue" class="btn blue"> </div>
+      </div>
+    </div>
+
+    <div class="column right">
+      <h4>🏆 RECORD 🏆</h4>
+      <p class="level-record">Level 0</p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>
